@@ -39,27 +39,6 @@ const IMAGES = {
   galleryFamily: galleryFamilyImg,
   galleryFoodStory: galleryFoodStoryImg,
 };
-  hero: '/images/hero.jpg',
-  heroBbq: '/images/hero-bbq.jpg',
-  heroBiryani: '/images/gallery-2.jpg',
-  heroInterior: '/images/hero-interior.jpg',
-  heroKarahiTable: '/images/hero-karahi-table.png',
-  heroKarahiInterior: '/images/hero-karahi-interior.png',
-  interior: '/images/hero-interior.jpg',
-  karahi: '/images/karahi.jpg',
-  bbq: '/images/bbq.jpg',
-  handi: '/images/handi.jpg',
-  biryani: '/images/gallery-2.jpg',
-  skewers: '/images/skewers.jpg',
-  spices: '/images/spices.jpg',
-  table: '/images/table.jpg',
-  gallery1: '/images/gallery-1.jpg',
-  gallery2: '/images/gallery-2.jpg',
-  gallery3: '/images/gallery-3.jpg',
-  gallery4: '/images/gallery-4.jpg',
-  galleryFamily: '/images/gallery-family-table.png',
-  galleryFoodStory: '/images/gallery-food-story.png',
-};
 
 
 const menuCategories = [
@@ -431,7 +410,7 @@ export default function App() {
           {/* Brass diagonal accent line */}
           <div className="absolute top-0 left-0 w-full h-full pointer-events-none hidden lg:block">
             <svg width="100%" height="100%" viewBox="0 0 1440 900" preserveAspectRatio="none">
-              <line x1="580" y1="0" x2="720" y2="900" stroke="#B58A4A" strokeWidth="1" strokeOpacity="0.25"/>
+              <line x1="580" y1="0" x2="720" y2="900" stroke="#B58A4A" strokeWidth="1" strokeOpacity="0.25" />
             </svg>
           </div>
         </div>
@@ -440,7 +419,7 @@ export default function App() {
         <div className="absolute top-8 right-6 lg:right-16 z-10 hidden sm:block">
           <div className="relative w-24 h-24 flex items-center justify-center">
             <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full animate-spin" style={{ animationDuration: '18s' }}>
-              <defs><path id="circle-path" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"/></defs>
+              <defs><path id="circle-path" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" /></defs>
               <text className="text-[9px]" fill="#B58A4A" letterSpacing="2.5">
                 <textPath href="#circle-path">TODAY'S SPECIAL · KARAHI · HANDI · BBQ · </textPath>
               </text>
@@ -538,16 +517,16 @@ export default function App() {
             </p>
             <div className="flex flex-col gap-2 lg:gap-3">
               {[['Signature Karahis', 'Slow-cooked with care'],
-                ['House Spices', 'Ground fresh each morning'],
-                ['Made For Sharing', 'Generous family portions']].map(([t, d], i) => (
+              ['House Spices', 'Ground fresh each morning'],
+              ['Made For Sharing', 'Generous family portions']].map(([t, d], i) => (
                 <Reveal key={t} delay={240 + 100 * i} className="story-bullet-reveal">
-                <div className="flex items-start gap-4">
-                  <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: 'var(--terracotta)' }}></div>
-                  <div>
-                    <span className="font-semibold text-sm" style={{ color: 'var(--charcoal)' }}>{t}</span>
-                    <span className="text-sm ml-2" style={{ color: 'var(--warm-gray)' }}>{d}</span>
+                  <div className="flex items-start gap-4">
+                    <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: 'var(--terracotta)' }}></div>
+                    <div>
+                      <span className="font-semibold text-sm" style={{ color: 'var(--charcoal)' }}>{t}</span>
+                      <span className="text-sm ml-2" style={{ color: 'var(--warm-gray)' }}>{d}</span>
+                    </div>
                   </div>
-                </div>
                 </Reveal>
               ))}
             </div>
@@ -777,16 +756,16 @@ export default function App() {
       <section className="why-section py-24 lg:py-32 px-6 relative overflow-hidden" style={{ backgroundColor: 'var(--charcoal)' }}>
         <div className="max-w-7xl mx-auto">
           <Reveal variant="rise" className="why-header-reveal">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="h-px w-12" style={{ backgroundColor: 'var(--brass)' }}></div>
-            <span className="text-xs tracking-[0.25em] uppercase font-medium" style={{ color: 'var(--brass)' }}>Why Choose Us</span>
-          </div>
-          <h2 className="font-display text-4xl lg:text-5xl mb-5 leading-tight" style={{ color: 'var(--ivory)' }}>
-            More Than a Meal
-          </h2>
-          <p className="why-intro max-w-xl text-sm lg:text-base leading-relaxed" style={{ color: 'rgba(248,244,237,0.55)' }}>
-            Rooted in tradition, prepared with care, and served with the warmth of a table made for everyone.
-          </p>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="h-px w-12" style={{ backgroundColor: 'var(--brass)' }}></div>
+              <span className="text-xs tracking-[0.25em] uppercase font-medium" style={{ color: 'var(--brass)' }}>Why Choose Us</span>
+            </div>
+            <h2 className="font-display text-4xl lg:text-5xl mb-5 leading-tight" style={{ color: 'var(--ivory)' }}>
+              More Than a Meal
+            </h2>
+            <p className="why-intro max-w-xl text-sm lg:text-base leading-relaxed" style={{ color: 'rgba(248,244,237,0.55)' }}>
+              Rooted in tradition, prepared with care, and served with the warmth of a table made for everyone.
+            </p>
           </Reveal>
 
           <div className="why-feature-list grid sm:grid-cols-2 lg:grid-cols-4 mt-14 lg:mt-20">
@@ -797,13 +776,13 @@ export default function App() {
               { icon: 'welcome' as const, title: 'Warm Hospitality', desc: "In Fateh Jang, a guest is treated like family. You'll feel it the moment you walk through our door." },
             ].map((item, i) => (
               <Reveal key={item.title} delay={120 * i} className="why-feature-reveal">
-              <div className="why-feature group relative px-0 sm:px-6 lg:px-8 py-8 lg:py-0" style={{ backgroundColor: 'transparent' }}>
-                <div className="why-feature-number text-[10px] tracking-[0.2em] font-semibold mb-7" style={{ color: 'rgba(181,138,74,0.5)' }}>0{i + 1} / 04</div>
-                <div className="why-feature-icon w-9 h-9 mb-6" style={{ color: 'var(--brass)' }}><WhyIcon type={item.icon} /></div>
-                <h3 className="why-feature-title font-display text-xl mb-3" style={{ color: 'var(--ivory)' }}>{item.title}</h3>
-                <p className="why-feature-description text-sm leading-relaxed" style={{ color: 'rgba(248,244,237,0.5)' }}>{item.desc}</p>
-                <div className="why-feature-rule" />
-              </div>
+                <div className="why-feature group relative px-0 sm:px-6 lg:px-8 py-8 lg:py-0" style={{ backgroundColor: 'transparent' }}>
+                  <div className="why-feature-number text-[10px] tracking-[0.2em] font-semibold mb-7" style={{ color: 'rgba(181,138,74,0.5)' }}>0{i + 1} / 04</div>
+                  <div className="why-feature-icon w-9 h-9 mb-6" style={{ color: 'var(--brass)' }}><WhyIcon type={item.icon} /></div>
+                  <h3 className="why-feature-title font-display text-xl mb-3" style={{ color: 'var(--ivory)' }}>{item.title}</h3>
+                  <p className="why-feature-description text-sm leading-relaxed" style={{ color: 'rgba(248,244,237,0.5)' }}>{item.desc}</p>
+                  <div className="why-feature-rule" />
+                </div>
               </Reveal>
             ))}
           </div>
@@ -887,23 +866,23 @@ export default function App() {
           <div ref={reviewsTrackRef} className="reviews-track">
             {visibleReviews.map((r, i) => (
               <article key={`${r.name}-${activeReview}-${i}`} className={`review-card review-card-${i} p-8 border`}>
-              <div className="review-card-shell">
-                <div className="flex gap-0.5 mb-5">
-                  {Array.from({ length: r.stars }).map((_, i) => (
-                    <span key={i} style={{ color: 'var(--brass)' }}>★</span>
-                  ))}
-                </div>
-                <p className="text-sm leading-relaxed mb-6 italic" style={{ color: 'var(--warm-gray)' }}>"{r.text}"</p>
-                <div className="flex items-center gap-3 pt-5 border-t" style={{ borderColor: 'var(--border)' }}>
-                  <div className="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0" style={{ backgroundColor: 'var(--terracotta)', color: 'var(--ivory)' }}>
-                    {r.name[0]}
+                <div className="review-card-shell">
+                  <div className="flex gap-0.5 mb-5">
+                    {Array.from({ length: r.stars }).map((_, i) => (
+                      <span key={i} style={{ color: 'var(--brass)' }}>★</span>
+                    ))}
                   </div>
-                  <div>
-                    <div className="text-sm font-semibold" style={{ color: 'var(--charcoal)' }}>{r.name}</div>
-                    <div className="text-xs" style={{ color: 'var(--warm-gray)' }}>{r.location}</div>
+                  <p className="text-sm leading-relaxed mb-6 italic" style={{ color: 'var(--warm-gray)' }}>"{r.text}"</p>
+                  <div className="flex items-center gap-3 pt-5 border-t" style={{ borderColor: 'var(--border)' }}>
+                    <div className="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0" style={{ backgroundColor: 'var(--terracotta)', color: 'var(--ivory)' }}>
+                      {r.name[0]}
+                    </div>
+                    <div>
+                      <div className="text-sm font-semibold" style={{ color: 'var(--charcoal)' }}>{r.name}</div>
+                      <div className="text-xs" style={{ color: 'var(--warm-gray)' }}>{r.location}</div>
+                    </div>
                   </div>
                 </div>
-              </div>
               </article>
             ))}
           </div>
@@ -981,17 +960,17 @@ export default function App() {
               </div>
 
               <div className="location-panel overflow-hidden relative" style={{ height: '320px', borderRadius: '2px', backgroundColor: 'var(--muted)' }}>
-              <img src={IMAGES.gallery4} alt="Location visual" className="w-full h-full object-cover opacity-50" />
-              <div className="relative z-10 absolute inset-0 flex flex-col items-center justify-center text-center p-6">
-                <div className="px-6 py-5" style={{ backgroundColor: 'var(--charcoal)', borderRadius: 'var(--radius)' }}>
-                  <div className="font-display text-lg mb-1" style={{ color: 'var(--brass)' }}>Mehran Desi Kitchen</div>
-                  <div className="text-xs mb-3" style={{ color: 'rgba(248,244,237,0.65)' }}>Fateh Jang, Punjab, Pakistan</div>
-                  <a href="https://maps.google.com/?q=Fateh+Jang+Punjab+Pakistan"
-                    className="text-xs font-semibold underline underline-offset-2"
-                    style={{ color: 'var(--brass)' }}>Get Directions →</a>
+                <img src={IMAGES.gallery4} alt="Location visual" className="w-full h-full object-cover opacity-50" />
+                <div className="relative z-10 absolute inset-0 flex flex-col items-center justify-center text-center p-6">
+                  <div className="px-6 py-5" style={{ backgroundColor: 'var(--charcoal)', borderRadius: 'var(--radius)' }}>
+                    <div className="font-display text-lg mb-1" style={{ color: 'var(--brass)' }}>Mehran Desi Kitchen</div>
+                    <div className="text-xs mb-3" style={{ color: 'rgba(248,244,237,0.65)' }}>Fateh Jang, Punjab, Pakistan</div>
+                    <a href="https://maps.google.com/?q=Fateh+Jang+Punjab+Pakistan"
+                      className="text-xs font-semibold underline underline-offset-2"
+                      style={{ color: 'var(--brass)' }}>Get Directions →</a>
+                  </div>
                 </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
@@ -1036,220 +1015,220 @@ export default function App() {
       )}
 
       {false && (
-      /* ── Assessment Documentation Panel ── */
-      <section style={{ backgroundColor: '#1a1613', borderTop: '2px solid var(--brass)' }}>
-        <button
-          onClick={() => setDocsOpen(!docsOpen)}
-          className="w-full px-6 py-5 flex items-center justify-between transition-colors"
-          style={{ color: 'var(--brass)' }}
-          onMouseEnter={e => (e.currentTarget.style.backgroundColor = 'rgba(181,138,74,0.05)')}
-          onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
-        >
-          <div className="flex items-center gap-4">
-            <span className="text-xs tracking-[0.25em] uppercase font-semibold">Design Documentation</span>
-            <span className="text-xs px-2 py-0.5 border" style={{ borderColor: 'rgba(181,138,74,0.4)', color: 'rgba(181,138,74,0.7)', borderRadius: '2px' }}>Assessment Tasks 08–10</span>
-          </div>
-          <span className="text-lg transition-transform" style={{ transform: docsOpen ? 'rotate(180deg)' : 'rotate(0deg)' }}>⌄</span>
-        </button>
+        /* ── Assessment Documentation Panel ── */
+        <section style={{ backgroundColor: '#1a1613', borderTop: '2px solid var(--brass)' }}>
+          <button
+            onClick={() => setDocsOpen(!docsOpen)}
+            className="w-full px-6 py-5 flex items-center justify-between transition-colors"
+            style={{ color: 'var(--brass)' }}
+            onMouseEnter={e => (e.currentTarget.style.backgroundColor = 'rgba(181,138,74,0.05)')}
+            onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
+          >
+            <div className="flex items-center gap-4">
+              <span className="text-xs tracking-[0.25em] uppercase font-semibold">Design Documentation</span>
+              <span className="text-xs px-2 py-0.5 border" style={{ borderColor: 'rgba(181,138,74,0.4)', color: 'rgba(181,138,74,0.7)', borderRadius: '2px' }}>Assessment Tasks 08–10</span>
+            </div>
+            <span className="text-lg transition-transform" style={{ transform: docsOpen ? 'rotate(180deg)' : 'rotate(0deg)' }}>⌄</span>
+          </button>
 
-        {docsOpen && (
-          <div className="px-6 pb-14">
-            <div className="max-w-5xl mx-auto">
-              {/* Doc tabs */}
-              <div className="flex gap-0 mb-8 border-b" style={{ borderColor: 'rgba(181,138,74,0.2)' }}>
-                {[
-                  { id: 'ux', label: 'Task 01 — UX Structure' },
-                  { id: 'feedback', label: 'Task 08 — Client Feedback' },
-                  { id: 'presentation', label: 'Task 09 — Presentation' },
-                  { id: 'handoff', label: 'Task 10 — Dev Handoff' },
-                ].map(tab => (
-                  <button key={tab.id}
-                    onClick={() => setActiveDoc(tab.id)}
-                    className="px-4 py-3 text-xs font-semibold border-b-2 -mb-px transition-all"
-                    style={{
-                      color: activeDoc === tab.id ? 'var(--brass)' : 'rgba(181,138,74,0.45)',
-                      borderBottomColor: activeDoc === tab.id ? 'var(--brass)' : 'transparent',
-                    }}
-                  >{tab.label}</button>
-                ))}
-              </div>
+          {docsOpen && (
+            <div className="px-6 pb-14">
+              <div className="max-w-5xl mx-auto">
+                {/* Doc tabs */}
+                <div className="flex gap-0 mb-8 border-b" style={{ borderColor: 'rgba(181,138,74,0.2)' }}>
+                  {[
+                    { id: 'ux', label: 'Task 01 — UX Structure' },
+                    { id: 'feedback', label: 'Task 08 — Client Feedback' },
+                    { id: 'presentation', label: 'Task 09 — Presentation' },
+                    { id: 'handoff', label: 'Task 10 — Dev Handoff' },
+                  ].map(tab => (
+                    <button key={tab.id}
+                      onClick={() => setActiveDoc(tab.id)}
+                      className="px-4 py-3 text-xs font-semibold border-b-2 -mb-px transition-all"
+                      style={{
+                        color: activeDoc === tab.id ? 'var(--brass)' : 'rgba(181,138,74,0.45)',
+                        borderBottomColor: activeDoc === tab.id ? 'var(--brass)' : 'transparent',
+                      }}
+                    >{tab.label}</button>
+                  ))}
+                </div>
 
-              {activeDoc === 'ux' && (
-                <div className="grid lg:grid-cols-2 gap-10">
-                  <div>
-                    <h3 className="font-display text-xl mb-4" style={{ color: 'var(--brass)' }}>Primary User Goal</h3>
-                    <p className="text-sm leading-relaxed mb-6" style={{ color: 'rgba(248,244,237,0.6)' }}>
-                      A first-time visitor should be able to view the menu, understand the restaurant atmosphere, and find contact or directions — all without leaving the homepage. The site turns passive discovery into an active decision to visit.
-                    </p>
-                    <h3 className="font-display text-xl mb-4" style={{ color: 'var(--brass)' }}>Primary CTA</h3>
-                    <p className="text-sm leading-relaxed mb-6" style={{ color: 'rgba(248,244,237,0.6)' }}>
-                      <strong style={{ color: 'var(--ivory)' }}>Explore Our Menu</strong> — placed in the hero and navigation. Secondary CTAs: Get Directions (hero), WhatsApp / Call (contact section), Plan Your Visit (final CTA).
-                    </p>
-                    <h3 className="font-display text-xl mb-4" style={{ color: 'var(--brass)' }}>Navigation Structure</h3>
-                    <div className="flex flex-wrap gap-2">
-                      {['Home', 'Menu', 'Our Story', 'Gallery', 'Reviews', 'Contact'].map(n => (
-                        <span key={n} className="px-3 py-1 text-xs border" style={{ color: 'rgba(248,244,237,0.65)', borderColor: 'rgba(181,138,74,0.3)', borderRadius: '2px' }}>{n}</span>
-                      ))}
+                {activeDoc === 'ux' && (
+                  <div className="grid lg:grid-cols-2 gap-10">
+                    <div>
+                      <h3 className="font-display text-xl mb-4" style={{ color: 'var(--brass)' }}>Primary User Goal</h3>
+                      <p className="text-sm leading-relaxed mb-6" style={{ color: 'rgba(248,244,237,0.6)' }}>
+                        A first-time visitor should be able to view the menu, understand the restaurant atmosphere, and find contact or directions — all without leaving the homepage. The site turns passive discovery into an active decision to visit.
+                      </p>
+                      <h3 className="font-display text-xl mb-4" style={{ color: 'var(--brass)' }}>Primary CTA</h3>
+                      <p className="text-sm leading-relaxed mb-6" style={{ color: 'rgba(248,244,237,0.6)' }}>
+                        <strong style={{ color: 'var(--ivory)' }}>Explore Our Menu</strong> — placed in the hero and navigation. Secondary CTAs: Get Directions (hero), WhatsApp / Call (contact section), Plan Your Visit (final CTA).
+                      </p>
+                      <h3 className="font-display text-xl mb-4" style={{ color: 'var(--brass)' }}>Navigation Structure</h3>
+                      <div className="flex flex-wrap gap-2">
+                        {['Home', 'Menu', 'Our Story', 'Gallery', 'Reviews', 'Contact'].map(n => (
+                          <span key={n} className="px-3 py-1 text-xs border" style={{ color: 'rgba(248,244,237,0.65)', borderColor: 'rgba(181,138,74,0.3)', borderRadius: '2px' }}>{n}</span>
+                        ))}
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="font-display text-xl mb-4" style={{ color: 'var(--brass)' }}>User Journey</h3>
+                      <div className="space-y-4">
+                        {[
+                          { stage: 'Discover', action: 'Lands on hero — strong headline and food photography immediately communicate the category and quality of the restaurant.' },
+                          { stage: 'Explore', action: 'Scrolls through signature dishes, interactive menu tabs, and food gallery — builds appetite and understanding of the offering.' },
+                          { stage: 'Trust', action: 'Reads real guest reviews, sees the "Our Story" section, and notices operational details (hours, local sourcing).' },
+                          { stage: 'Visit', action: 'Reaches the contact section — clicks WhatsApp, Call, or Get Directions. Final CTA reinforces the decision.' },
+                        ].map((step, i) => (
+                          <div key={step.stage} className="flex gap-4">
+                            <div className="font-display text-2xl flex-shrink-0" style={{ color: 'rgba(181,138,74,0.35)' }}>0{i + 1}</div>
+                            <div>
+                              <div className="text-sm font-semibold mb-1" style={{ color: 'var(--ivory)' }}>{step.stage}</div>
+                              <div className="text-xs leading-relaxed" style={{ color: 'rgba(248,244,237,0.5)' }}>{step.action}</div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
+                )}
+
+                {activeDoc === 'feedback' && (
                   <div>
-                    <h3 className="font-display text-xl mb-4" style={{ color: 'var(--brass)' }}>User Journey</h3>
-                    <div className="space-y-4">
+                    <div className="mb-8 p-5 border-l-2" style={{ borderColor: 'var(--brass)', backgroundColor: 'rgba(181,138,74,0.06)' }}>
+                      <p className="text-sm italic" style={{ color: 'rgba(248,244,237,0.65)' }}>
+                        Client says: <strong style={{ color: 'var(--ivory)' }}>"I like the design, but it feels too modern. We want people to feel the traditional Pakistani food experience as soon as they open the website."</strong>
+                      </p>
+                    </div>
+                    <div className="grid lg:grid-cols-3 gap-6">
                       {[
-                        { stage: 'Discover', action: 'Lands on hero — strong headline and food photography immediately communicate the category and quality of the restaurant.' },
-                        { stage: 'Explore', action: 'Scrolls through signature dishes, interactive menu tabs, and food gallery — builds appetite and understanding of the offering.' },
-                        { stage: 'Trust', action: 'Reads real guest reviews, sees the "Our Story" section, and notices operational details (hours, local sourcing).' },
-                        { stage: 'Visit', action: 'Reaches the contact section — clicks WhatsApp, Call, or Get Directions. Final CTA reinforces the decision.' },
-                      ].map((step, i) => (
-                        <div key={step.stage} className="flex gap-4">
-                          <div className="font-display text-2xl flex-shrink-0" style={{ color: 'rgba(181,138,74,0.35)' }}>0{i + 1}</div>
-                          <div>
-                            <div className="text-sm font-semibold mb-1" style={{ color: 'var(--ivory)' }}>{step.stage}</div>
-                            <div className="text-xs leading-relaxed" style={{ color: 'rgba(248,244,237,0.5)' }}>{step.action}</div>
-                          </div>
+                        {
+                          n: '01',
+                          change: 'Replace hero photo with clay-pot / open-flame cooking image',
+                          reason: 'The current plated-food hero reads as "modern restaurant." A raw, active cooking shot — smoke rising from a wok, coals under a handi — immediately signals traditional preparation and creates emotional warmth.',
+                          effect: 'Visitors feel the kitchen, not just the plate. The authenticity signal arrives in the first three seconds.',
+                        },
+                        {
+                          n: '02',
+                          change: 'Add an Urdu script wordmark alongside the English logo',
+                          reason: 'Urdu typography is immediately recognisable as Pakistani. A single Urdu script accent (مہران) paired with the English logotype grounds the brand in cultural identity without decorative overload.',
+                          effect: 'Local customers feel seen; the brand reads as genuinely Pakistani rather than internationally styled.',
+                        },
+                        {
+                          n: '03',
+                          change: 'Introduce a warm, hand-textured background pattern in the hero',
+                          reason: 'A subtle geometric tile motif — drawn from traditional Pakistani woodwork or textiles — applied at low opacity behind the hero text adds cultural depth without clutter or truck-art kitsch.',
+                          effect: 'The design feels crafted and rooted. The atmosphere becomes more tangible before the user reads a single word.',
+                        },
+                      ].map(item => (
+                        <div key={item.n} className="p-6 border" style={{ borderColor: 'rgba(181,138,74,0.2)', borderRadius: '2px' }}>
+                          <div className="font-display text-3xl mb-4" style={{ color: 'rgba(181,138,74,0.3)' }}>{item.n}</div>
+                          <div className="text-sm font-semibold mb-3" style={{ color: 'var(--ivory)' }}>Change: {item.change}</div>
+                          <div className="text-xs leading-relaxed mb-3" style={{ color: 'rgba(248,244,237,0.5)' }}><strong style={{ color: 'rgba(248,244,237,0.75)' }}>Reason:</strong> {item.reason}</div>
+                          <div className="text-xs leading-relaxed" style={{ color: 'rgba(248,244,237,0.5)' }}><strong style={{ color: 'rgba(248,244,237,0.75)' }}>Expected Effect:</strong> {item.effect}</div>
                         </div>
                       ))}
                     </div>
                   </div>
-                </div>
-              )}
+                )}
 
-              {activeDoc === 'feedback' && (
-                <div>
-                  <div className="mb-8 p-5 border-l-2" style={{ borderColor: 'var(--brass)', backgroundColor: 'rgba(181,138,74,0.06)' }}>
-                    <p className="text-sm italic" style={{ color: 'rgba(248,244,237,0.65)' }}>
-                      Client says: <strong style={{ color: 'var(--ivory)' }}>"I like the design, but it feels too modern. We want people to feel the traditional Pakistani food experience as soon as they open the website."</strong>
-                    </p>
-                  </div>
-                  <div className="grid lg:grid-cols-3 gap-6">
+                {activeDoc === 'presentation' && (
+                  <div className="grid lg:grid-cols-2 gap-10">
                     {[
                       {
-                        n: '01',
-                        change: 'Replace hero photo with clay-pot / open-flame cooking image',
-                        reason: 'The current plated-food hero reads as "modern restaurant." A raw, active cooking shot — smoke rising from a wok, coals under a handi — immediately signals traditional preparation and creates emotional warmth.',
-                        effect: 'Visitors feel the kitchen, not just the plate. The authenticity signal arrives in the first three seconds.',
+                        title: '1. Design Concept',
+                        content: 'The concept is "From the Kitchen to the Table." Every design decision — the warm ivory background, the clay-red primary colour, the editorial serif headings — is intended to evoke the feeling of sitting in a Pakistani family home, not visiting a generic restaurant chain. The site communicates tradition through restraint, not decoration.',
                       },
                       {
-                        n: '02',
-                        change: 'Add an Urdu script wordmark alongside the English logo',
-                        reason: 'Urdu typography is immediately recognisable as Pakistani. A single Urdu script accent (مہران) paired with the English logotype grounds the brand in cultural identity without decorative overload.',
-                        effect: 'Local customers feel seen; the brand reads as genuinely Pakistani rather than internationally styled.',
+                        title: '2. Target Customer',
+                        content: 'Families planning a meal out, local residents in Fateh Jang and surrounding areas (Attock, Rawalpindi corridor), and travellers passing through Punjab who want a trustworthy, high-quality local dining experience. The site is also calibrated for WhatsApp and mobile — how this customer actually discovers businesses.',
                       },
                       {
-                        n: '03',
-                        change: 'Introduce a warm, hand-textured background pattern in the hero',
-                        reason: 'A subtle geometric tile motif — drawn from traditional Pakistani woodwork or textiles — applied at low opacity behind the hero text adds cultural depth without clutter or truck-art kitsch.',
-                        effect: 'The design feels crafted and rooted. The atmosphere becomes more tangible before the user reads a single word.',
+                        title: '3. Key Design Decision',
+                        content: 'Making the menu interactive (tabbed categories) rather than a static list. A restaurant website visitor\'s primary decision is "do they serve what I want?" An interactive menu lets them discover the breadth of the offering at their own pace, reducing friction between curiosity and the decision to visit.',
+                      },
+                      {
+                        title: '4. Business Value',
+                        content: 'The website solves the restaurant\'s core problem: fragmented discovery across WhatsApp, Facebook, and word of mouth. It consolidates menu, atmosphere, location, and contact into one professional page — reducing the gap between someone seeing the food on Instagram and actually walking through the door.',
                       },
                     ].map(item => (
-                      <div key={item.n} className="p-6 border" style={{ borderColor: 'rgba(181,138,74,0.2)', borderRadius: '2px' }}>
-                        <div className="font-display text-3xl mb-4" style={{ color: 'rgba(181,138,74,0.3)' }}>{item.n}</div>
-                        <div className="text-sm font-semibold mb-3" style={{ color: 'var(--ivory)' }}>Change: {item.change}</div>
-                        <div className="text-xs leading-relaxed mb-3" style={{ color: 'rgba(248,244,237,0.5)' }}><strong style={{ color: 'rgba(248,244,237,0.75)' }}>Reason:</strong> {item.reason}</div>
-                        <div className="text-xs leading-relaxed" style={{ color: 'rgba(248,244,237,0.5)' }}><strong style={{ color: 'rgba(248,244,237,0.75)' }}>Expected Effect:</strong> {item.effect}</div>
+                      <div key={item.title} className="p-6 border" style={{ borderColor: 'rgba(181,138,74,0.2)', borderRadius: '2px' }}>
+                        <h3 className="font-display text-lg mb-4" style={{ color: 'var(--brass)' }}>{item.title}</h3>
+                        <p className="text-sm leading-relaxed" style={{ color: 'rgba(248,244,237,0.6)' }}>{item.content}</p>
                       </div>
                     ))}
                   </div>
-                </div>
-              )}
+                )}
 
-              {activeDoc === 'presentation' && (
-                <div className="grid lg:grid-cols-2 gap-10">
-                  {[
-                    {
-                      title: '1. Design Concept',
-                      content: 'The concept is "From the Kitchen to the Table." Every design decision — the warm ivory background, the clay-red primary colour, the editorial serif headings — is intended to evoke the feeling of sitting in a Pakistani family home, not visiting a generic restaurant chain. The site communicates tradition through restraint, not decoration.',
-                    },
-                    {
-                      title: '2. Target Customer',
-                      content: 'Families planning a meal out, local residents in Fateh Jang and surrounding areas (Attock, Rawalpindi corridor), and travellers passing through Punjab who want a trustworthy, high-quality local dining experience. The site is also calibrated for WhatsApp and mobile — how this customer actually discovers businesses.',
-                    },
-                    {
-                      title: '3. Key Design Decision',
-                      content: 'Making the menu interactive (tabbed categories) rather than a static list. A restaurant website visitor\'s primary decision is "do they serve what I want?" An interactive menu lets them discover the breadth of the offering at their own pace, reducing friction between curiosity and the decision to visit.',
-                    },
-                    {
-                      title: '4. Business Value',
-                      content: 'The website solves the restaurant\'s core problem: fragmented discovery across WhatsApp, Facebook, and word of mouth. It consolidates menu, atmosphere, location, and contact into one professional page — reducing the gap between someone seeing the food on Instagram and actually walking through the door.',
-                    },
-                  ].map(item => (
-                    <div key={item.title} className="p-6 border" style={{ borderColor: 'rgba(181,138,74,0.2)', borderRadius: '2px' }}>
-                      <h3 className="font-display text-lg mb-4" style={{ color: 'var(--brass)' }}>{item.title}</h3>
-                      <p className="text-sm leading-relaxed" style={{ color: 'rgba(248,244,237,0.6)' }}>{item.content}</p>
-                    </div>
-                  ))}
-                </div>
-              )}
-
-              {activeDoc === 'handoff' && (
-                <div className="grid lg:grid-cols-2 gap-10">
-                  <div>
-                    <h3 className="font-display text-xl mb-5" style={{ color: 'var(--brass)' }}>Colour Tokens</h3>
-                    <div className="space-y-2 mb-8">
-                      {[
-                        { name: 'Terracotta / Primary', hex: '#8F2D24', role: 'CTAs, active states, tags' },
-                        { name: 'Warm Ivory / Background', hex: '#F8F4ED', role: 'Page background' },
-                        { name: 'Charcoal / Secondary', hex: '#25201C', role: 'Dark sections, footer, nav' },
-                        { name: 'Muted Brass / Accent', hex: '#B58A4A', role: 'Headings accent, stars, dividers' },
-                        { name: 'Deep Charcoal / Text', hex: '#292522', role: 'Body text, headings' },
-                        { name: 'Warm Gray / Muted', hex: '#756E67', role: 'Secondary text, captions' },
-                        { name: 'Border', hex: '#DDD5C8', role: 'Dividers, card borders' },
-                        { name: 'Off-White Section', hex: '#EDE8DF', role: 'Alternating section bg' },
-                      ].map(c => (
-                        <div key={c.name} className="flex items-center gap-3">
-                          <div className="w-5 h-5 flex-shrink-0 border" style={{ backgroundColor: c.hex, borderColor: 'rgba(181,138,74,0.2)', borderRadius: '2px' }}></div>
-                          <div className="flex-1 flex items-baseline justify-between gap-2">
-                            <span className="text-xs font-mono" style={{ color: 'var(--ivory)' }}>{c.hex}</span>
-                            <span className="text-xs" style={{ color: 'rgba(248,244,237,0.45)' }}>{c.name} · {c.role}</span>
+                {activeDoc === 'handoff' && (
+                  <div className="grid lg:grid-cols-2 gap-10">
+                    <div>
+                      <h3 className="font-display text-xl mb-5" style={{ color: 'var(--brass)' }}>Colour Tokens</h3>
+                      <div className="space-y-2 mb-8">
+                        {[
+                          { name: 'Terracotta / Primary', hex: '#8F2D24', role: 'CTAs, active states, tags' },
+                          { name: 'Warm Ivory / Background', hex: '#F8F4ED', role: 'Page background' },
+                          { name: 'Charcoal / Secondary', hex: '#25201C', role: 'Dark sections, footer, nav' },
+                          { name: 'Muted Brass / Accent', hex: '#B58A4A', role: 'Headings accent, stars, dividers' },
+                          { name: 'Deep Charcoal / Text', hex: '#292522', role: 'Body text, headings' },
+                          { name: 'Warm Gray / Muted', hex: '#756E67', role: 'Secondary text, captions' },
+                          { name: 'Border', hex: '#DDD5C8', role: 'Dividers, card borders' },
+                          { name: 'Off-White Section', hex: '#EDE8DF', role: 'Alternating section bg' },
+                        ].map(c => (
+                          <div key={c.name} className="flex items-center gap-3">
+                            <div className="w-5 h-5 flex-shrink-0 border" style={{ backgroundColor: c.hex, borderColor: 'rgba(181,138,74,0.2)', borderRadius: '2px' }}></div>
+                            <div className="flex-1 flex items-baseline justify-between gap-2">
+                              <span className="text-xs font-mono" style={{ color: 'var(--ivory)' }}>{c.hex}</span>
+                              <span className="text-xs" style={{ color: 'rgba(248,244,237,0.45)' }}>{c.name} · {c.role}</span>
+                            </div>
                           </div>
-                        </div>
-                      ))}
+                        ))}
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="font-display text-xl mb-5" style={{ color: 'var(--brass)' }}>Typography</h3>
+                      <div className="space-y-3 mb-8">
+                        {[
+                          { face: 'DM Serif Display', weights: '400, 400 Italic', use: 'All headings (h1–h3), logo wordmark, section numbers' },
+                          { face: 'Manrope', weights: '300, 400, 500, 600, 700', use: 'Body text, navigation, labels, buttons, captions' },
+                        ].map(t => (
+                          <div key={t.face} className="p-4 border" style={{ borderColor: 'rgba(181,138,74,0.2)', borderRadius: '2px' }}>
+                            <div className="text-sm font-semibold mb-1" style={{ color: 'var(--ivory)' }}>{t.face}</div>
+                            <div className="text-xs mb-1" style={{ color: 'var(--brass)' }}>Weights: {t.weights}</div>
+                            <div className="text-xs" style={{ color: 'rgba(248,244,237,0.5)' }}>Use: {t.use}</div>
+                          </div>
+                        ))}
+                      </div>
+
+                      <h3 className="font-display text-xl mb-5" style={{ color: 'var(--brass)' }}>Button Styles</h3>
+                      <div className="space-y-3 mb-8">
+                        {[
+                          { name: 'Primary', spec: 'bg #8F2D24 · text #F8F4ED · px-7 py-4 · radius 4px · hover #7a2620' },
+                          { name: 'Secondary (outline)', spec: 'border #8F2D24 · text #8F2D24 · px-7 py-4 · hover fill terracotta' },
+                          { name: 'Ghost (on dark)', spec: 'border rgba(ivory,0.35) · text ivory · hover border brass · text brass' },
+                        ].map(b => (
+                          <div key={b.name} className="text-xs p-3 border" style={{ borderColor: 'rgba(181,138,74,0.2)', borderRadius: '2px' }}>
+                            <span className="font-semibold" style={{ color: 'var(--ivory)' }}>{b.name}: </span>
+                            <span style={{ color: 'rgba(248,244,237,0.5)' }}>{b.spec}</span>
+                          </div>
+                        ))}
+                      </div>
+
+                      <h3 className="font-display text-xl mb-4" style={{ color: 'var(--brass)' }}>Grid & Spacing</h3>
+                      <div className="text-xs space-y-1" style={{ color: 'rgba(248,244,237,0.55)' }}>
+                        <div>Container: max-w-7xl (1280px) · px-6</div>
+                        <div>Desktop grid: 12-col implicit via CSS Grid / Tailwind</div>
+                        <div>Section padding: py-24 (96px) · reduced to py-16 on mobile</div>
+                        <div>Card radius: 2px (sharp, not rounded)</div>
+                        <div>Breakpoints: sm 640px · lg 1024px</div>
+                      </div>
                     </div>
                   </div>
-                  <div>
-                    <h3 className="font-display text-xl mb-5" style={{ color: 'var(--brass)' }}>Typography</h3>
-                    <div className="space-y-3 mb-8">
-                      {[
-                        { face: 'DM Serif Display', weights: '400, 400 Italic', use: 'All headings (h1–h3), logo wordmark, section numbers' },
-                        { face: 'Manrope', weights: '300, 400, 500, 600, 700', use: 'Body text, navigation, labels, buttons, captions' },
-                      ].map(t => (
-                        <div key={t.face} className="p-4 border" style={{ borderColor: 'rgba(181,138,74,0.2)', borderRadius: '2px' }}>
-                          <div className="text-sm font-semibold mb-1" style={{ color: 'var(--ivory)' }}>{t.face}</div>
-                          <div className="text-xs mb-1" style={{ color: 'var(--brass)' }}>Weights: {t.weights}</div>
-                          <div className="text-xs" style={{ color: 'rgba(248,244,237,0.5)' }}>Use: {t.use}</div>
-                        </div>
-                      ))}
-                    </div>
-
-                    <h3 className="font-display text-xl mb-5" style={{ color: 'var(--brass)' }}>Button Styles</h3>
-                    <div className="space-y-3 mb-8">
-                      {[
-                        { name: 'Primary', spec: 'bg #8F2D24 · text #F8F4ED · px-7 py-4 · radius 4px · hover #7a2620' },
-                        { name: 'Secondary (outline)', spec: 'border #8F2D24 · text #8F2D24 · px-7 py-4 · hover fill terracotta' },
-                        { name: 'Ghost (on dark)', spec: 'border rgba(ivory,0.35) · text ivory · hover border brass · text brass' },
-                      ].map(b => (
-                        <div key={b.name} className="text-xs p-3 border" style={{ borderColor: 'rgba(181,138,74,0.2)', borderRadius: '2px' }}>
-                          <span className="font-semibold" style={{ color: 'var(--ivory)' }}>{b.name}: </span>
-                          <span style={{ color: 'rgba(248,244,237,0.5)' }}>{b.spec}</span>
-                        </div>
-                      ))}
-                    </div>
-
-                    <h3 className="font-display text-xl mb-4" style={{ color: 'var(--brass)' }}>Grid & Spacing</h3>
-                    <div className="text-xs space-y-1" style={{ color: 'rgba(248,244,237,0.55)' }}>
-                      <div>Container: max-w-7xl (1280px) · px-6</div>
-                      <div>Desktop grid: 12-col implicit via CSS Grid / Tailwind</div>
-                      <div>Section padding: py-24 (96px) · reduced to py-16 on mobile</div>
-                      <div>Card radius: 2px (sharp, not rounded)</div>
-                      <div>Breakpoints: sm 640px · lg 1024px</div>
-                    </div>
-                  </div>
-                </div>
-              )}
+                )}
+              </div>
             </div>
-          </div>
-        )}
-      </section>
+          )}
+        </section>
       )}
 
       {/* ── Footer ── */}
