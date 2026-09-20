@@ -1,0 +1,10 @@
+{
+  "description": "Streamlines task management by enabling users to efficiently organize, track, and complete their daily activities with ease and clarity.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

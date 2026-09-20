@@ -1,0 +1,175 @@
+Create a professional, distinctive, high-fidelity UI/UX website design for a fictional Pakistani restaurant called "Mehran Desi Kitchen", located in Fateh Jang, Punjab, Pakistan.
+
+IMPORTANT CONTEXT:
+This is a WEBSITE DESIGN ASSESSMENT for an internship. The design should demonstrate strong UI/UX fundamentals, visual design, responsive thinking, business understanding, content structure, and a consistent design system.
+
+The restaurant serves traditional Pakistani food with a modern family-dining experience. Its menu includes Karahi, BBQ, Handi, Biryani, Pulao, Tikka, Kabab, Naan, Desserts, and Beverages.
+
+BUSINESS PROBLEM:
+The restaurant currently depends on walk-in customers, Facebook/Instagram, WhatsApp, and word of mouth. Customers need one professional place to discover the menu, understand the restaurant atmosphere, find the location, and contact or visit the restaurant.
+
+PRIMARY WEBSITE GOAL:
+Turn website visitors into customers by making it easy to:
+1. View the menu
+2. Find the location
+3. Contact or visit the restaurant
+
+DESIGN CONCEPT:
+"From the Kitchen to the Table"
+
+The website should communicate:
+Local Pakistani Identity + Food Appeal + Trust + Convenience.
+
+The visual experience should feel:
+Modern, Premium, Warm, Authentic, Appetizing, and Family-Friendly.
+
+Do NOT create a generic restaurant template. Build a distinctive visual identity inspired by Pakistani hospitality and traditional food culture, but keep it elegant, contemporary, usable, and professional. Avoid excessive cultural patterns, clutter, over-decoration, or stereotypical truck-art styling.
+
+DESKTOP DESIGN:
+Create a complete high-fidelity desktop homepage at 1440px width.
+
+REQUIRED HOMEPAGE STRUCTURE:
+1. Slim top information bar:
+   - Fateh Jang, Punjab
+   - Family Dining
+   - Open Today
+
+2. Main navigation:
+   - Mehran Desi Kitchen logo/wordmark
+   - Home
+   - Menu
+   - Our Story
+   - Gallery
+   - Reviews
+   - Contact
+   - Primary CTA: Explore Menu
+
+3. Hero section:
+   - Strong headline: "Taste That Feels Like Home."
+   - Supporting text about traditional Pakistani flavours, warm hospitality, and memorable meals
+   - Primary CTA: Explore Our Menu
+   - Secondary CTA: Get Directions
+   - A premium, appetizing Pakistani food hero image
+   - Include subtle restaurant identity and trust details
+   - Use a strong, balanced composition rather than a generic centered hero
+
+4. Restaurant introduction:
+   - Heading: "A Table Full of Tradition"
+   - 2–3 sentences about traditional Pakistani cuisine, family dining, and Fateh Jang
+   - Include a warm restaurant interior or dining atmosphere image
+
+5. Signature / Popular Dishes:
+   - Heading: "Made to Be Remembered"
+   - Three featured dishes:
+     - Chicken Karahi
+     - BBQ Platter
+     - Mutton Handi
+   - Each card must include image, name, short description, and price
+   - Use consistent card design and strong food photography
+
+6. Menu Preview:
+   - Heading: "Explore Our Menu"
+   - Three categories:
+     - Karahi & Handi
+     - BBQ & Tikka
+     - Biryani & Rice
+   - Show 2–3 sample dishes per category
+   - Each item should include dish name, short description, and realistic fictional Pakistani rupee price
+   - Make the menu easy to scan, not just decorative cards
+
+7. Why Choose Us:
+   - Heading: "More Than a Meal"
+   - Traditional Taste
+   - Freshly Prepared
+   - Family Friendly
+   - Warm Hospitality
+
+8. Food / Restaurant Gallery:
+   - Heading: "Come for the Food. Stay for the Feeling."
+   - Use a thoughtful, editorial-style image grid with food and restaurant atmosphere
+   - Do not use random stock images simply to fill space
+
+9. Customer Reviews:
+   - Heading: "Shared Around the Table"
+   - Include 2–3 clearly fictional sample reviews
+   - Keep the section credible and visually clean
+
+10. Location / Contact:
+   - Heading: "Your Next Meal Starts Here"
+   - Fateh Jang, Punjab
+   - Call
+   - WhatsApp
+   - Get Directions
+   - Include a map/location visual or tasteful map placeholder
+   - Do not invent a real business address or claim real reviews
+
+11. Final CTA:
+   - Heading: "Bring Your Family. Taste the Tradition."
+   - CTA: Plan Your Visit
+
+12. Footer:
+   - Restaurant name
+   - Navigation
+   - Contact details
+   - Social media placeholders
+   - Copyright
+
+VISUAL DESIGN SYSTEM:
+Use a refined Pakistani-inspired palette:
+- Deep Terracotta / Desi Red: #8F2D24
+- Warm Ivory: #F8F4ED
+- Charcoal Brown: #25201C
+- Muted Brass: #B58A4A
+- Deep Charcoal Text: #292522
+- Warm Gray: #756E67
+
+Typography direction:
+- Elegant editorial serif for major headings, such as DM Serif Display
+- Clean modern sans-serif for body text, such as Manrope
+- Maintain excellent readability and hierarchy
+
+DESIGN DETAILS:
+- Strong visual hierarchy
+- Generous spacing
+- Consistent 12-column desktop grid
+- Refined buttons with clear primary and secondary styles
+- Subtle borders and controlled corner radius
+- Minimal, tasteful decorative details inspired by Pakistani hospitality
+- High-quality, consistent food photography
+- Avoid excessive shadows, excessive rounded cards, neon colors, generic gradients, and overly futuristic AI-style visuals
+- Make the website feel like a real premium local restaurant brand, not a template
+
+RESPONSIVE DESIGN:
+Also create a separate mobile homepage adaptation at 390px width.
+Show how the desktop layout transforms for mobile:
+- Mobile navigation / hamburger
+- Readable typography
+- Proper image cropping
+- Stacked content
+- Touch-friendly CTA buttons
+- Mobile-friendly menu preview
+- Gallery adaptation
+- Easy-to-find contact and location section
+- Correct spacing and hierarchy
+
+ADDITIONAL ASSESSMENT DELIVERABLES:
+Prepare supporting design documentation within the project:
+- Primary user goal
+- Primary CTA
+- Navigation structure
+- User journey: Discover → Explore → Trust → Visit
+- Low-fidelity homepage wireframe
+- Menu section with 3 categories and sample dishes
+- Key website copy
+- Client feedback response:
+  The client says: "I like the design, but it feels too modern. We want people to feel the traditional Pakistani food experience as soon as they open the website."
+  Suggest 3 changes, each with Change, Reason, and Expected Effect.
+- Short client presentation notes
+- Developer handoff: fonts, color codes, button styles, spacing/grid, and image references
+
+DELIVERABLE PRIORITY:
+First create the complete high-fidelity desktop homepage.
+Then create the 390px mobile adaptation.
+Also include a low-fidelity wireframe and a small design system/style guide.
+
+The result should look polished enough for a professional internship assessment and should clearly demonstrate thoughtful UX, not just visual decoration.
