@@ -1,7 +1,44 @@
 import { useState, useEffect, useRef } from 'react'
-import logo from './assets/logo.png'
+import heroImg from './assets/images/hero.jpg';
+import heroBbqImg from './assets/images/hero-bbq.jpg';
+import heroInteriorImg from './assets/images/hero-interior.jpg';
+import heroKarahiTableImg from './assets/images/hero-karahi-table.png';
+import heroKarahiInteriorImg from './assets/images/hero-karahi-interior.png';
+import karahiImg from './assets/images/karahi.jpg';
+import bbqImg from './assets/images/bbq.jpg';
+import handiImg from './assets/images/handi.jpg';
+import skewersImg from './assets/images/skewers.jpg';
+import spicesImg from './assets/images/spices.jpg';
+import tableImg from './assets/images/table.jpg';
+import gallery1Img from './assets/images/gallery-1.jpg';
+import gallery2Img from './assets/images/gallery-2.jpg';
+import gallery3Img from './assets/images/gallery-3.jpg';
+import gallery4Img from './assets/images/gallery-4.jpg';
+import galleryFamilyImg from './assets/images/gallery-family-table.png';
+import galleryFoodStoryImg from './assets/images/gallery-food-story.png';
 
 const IMAGES = {
+  hero: heroImg,
+  heroBbq: heroBbqImg,
+  heroBiryani: gallery2Img,
+  heroInterior: heroInteriorImg,
+  heroKarahiTable: heroKarahiTableImg,
+  heroKarahiInterior: heroKarahiInteriorImg,
+  interior: heroInteriorImg,
+  karahi: karahiImg,
+  bbq: bbqImg,
+  handi: handiImg,
+  biryani: gallery2Img,
+  skewers: skewersImg,
+  spices: spicesImg,
+  table: tableImg,
+  gallery1: gallery1Img,
+  gallery2: gallery2Img,
+  gallery3: gallery3Img,
+  gallery4: gallery4Img,
+  galleryFamily: galleryFamilyImg,
+  galleryFoodStory: galleryFoodStoryImg,
+};
   hero: '/images/hero.jpg',
   heroBbq: '/images/hero-bbq.jpg',
   heroBiryani: '/images/gallery-2.jpg',
