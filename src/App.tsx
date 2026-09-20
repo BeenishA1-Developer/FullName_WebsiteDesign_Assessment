@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import heroImg from './assets/images/hero.jpg';
+import logo from './assets/logo.png';
 import heroBbqImg from './assets/images/hero-bbq.jpg';
 import heroInteriorImg from './assets/images/hero-interior.jpg';
 import heroKarahiTableImg from './assets/images/hero-karahi-table.png';
