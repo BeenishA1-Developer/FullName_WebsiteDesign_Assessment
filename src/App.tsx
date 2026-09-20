@@ -1,45 +1,29 @@
 import { useState, useEffect, useRef } from 'react'
 import logo from './assets/logo.png'
-import bbq from './assets/images/bbq.jpg'
-import gallery1 from './assets/images/gallery-1.jpg'
-import gallery2 from './assets/images/gallery-2.jpg'
-import gallery3 from './assets/images/gallery-3.jpg'
-import gallery4 from './assets/images/gallery-4.jpg'
-import galleryFamily from './assets/images/gallery-family-table.png'
-import galleryFoodStory from './assets/images/gallery-food-story.png'
-import handi from './assets/images/handi.jpg'
-import hero from './assets/images/hero.jpg'
-import heroBbq from './assets/images/hero-bbq.jpg'
-import heroInterior from './assets/images/hero-interior.jpg'
-import heroKarahiInterior from './assets/images/hero-karahi-interior.png'
-import heroKarahiTable from './assets/images/hero-karahi-table.png'
-import karahi from './assets/images/karahi.jpg'
-import skewers from './assets/images/skewers.jpg'
-import spices from './assets/images/spices.jpg'
-import table from './assets/images/table.jpg'
 
 const IMAGES = {
-  hero,
-  heroBbq,
-  heroBiryani: gallery2,
-  heroInterior,
-  heroKarahiTable,
-  heroKarahiInterior,
-  interior: heroInterior,
-  karahi,
-  bbq,
-  handi,
-  biryani: gallery2,
-  skewers,
-  spices,
-  table,
-  gallery1,
-  gallery2,
-  gallery3,
-  gallery4,
-  galleryFamily,
-  galleryFoodStory,
-}
+  hero: '/images/hero.jpg',
+  heroBbq: '/images/hero-bbq.jpg',
+  heroBiryani: '/images/gallery-2.jpg',
+  heroInterior: '/images/hero-interior.jpg',
+  heroKarahiTable: '/images/hero-karahi-table.png',
+  heroKarahiInterior: '/images/hero-karahi-interior.png',
+  interior: '/images/hero-interior.jpg',
+  karahi: '/images/karahi.jpg',
+  bbq: '/images/bbq.jpg',
+  handi: '/images/handi.jpg',
+  biryani: '/images/gallery-2.jpg',
+  skewers: '/images/skewers.jpg',
+  spices: '/images/spices.jpg',
+  table: '/images/table.jpg',
+  gallery1: '/images/gallery-1.jpg',
+  gallery2: '/images/gallery-2.jpg',
+  gallery3: '/images/gallery-3.jpg',
+  gallery4: '/images/gallery-4.jpg',
+  galleryFamily: '/images/gallery-family-table.png',
+  galleryFoodStory: '/images/gallery-food-story.png',
+};
+
 
 const menuCategories = [
   {
