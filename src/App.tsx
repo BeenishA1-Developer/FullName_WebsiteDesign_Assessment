@@ -1,30 +1,44 @@
 import { useState, useEffect, useRef } from 'react'
 import logo from './assets/logo.png'
-
-const localImages = import.meta.glob('./assets/images/*', { eager: true, query: '?url', import: 'default' }) as Record<string, string>
-const localImage = (name: string) => localImages[`./assets/images/${name}`]
+import bbq from './assets/images/bbq.jpg'
+import gallery1 from './assets/images/gallery-1.jpg'
+import gallery2 from './assets/images/gallery-2.jpg'
+import gallery3 from './assets/images/gallery-3.jpg'
+import gallery4 from './assets/images/gallery-4.jpg'
+import galleryFamily from './assets/images/gallery-family-table.png'
+import galleryFoodStory from './assets/images/gallery-food-story.png'
+import handi from './assets/images/handi.jpg'
+import hero from './assets/images/hero.jpg'
+import heroBbq from './assets/images/hero-bbq.jpg'
+import heroInterior from './assets/images/hero-interior.jpg'
+import heroKarahiInterior from './assets/images/hero-karahi-interior.png'
+import heroKarahiTable from './assets/images/hero-karahi-table.png'
+import karahi from './assets/images/karahi.jpg'
+import skewers from './assets/images/skewers.jpg'
+import spices from './assets/images/spices.jpg'
+import table from './assets/images/table.jpg'
 
 const IMAGES = {
-  hero: localImage('hero.jpg'),
-  heroBbq: localImage('hero-bbq.jpg'),
-  heroBiryani: localImage('gallery-2.jpg'),
-  heroInterior: localImage('hero-interior.jpg'),
-  heroKarahiTable: localImage('hero-karahi-table.png'),
-  heroKarahiInterior: localImage('hero-karahi-interior.png'),
-  interior: localImage('hero-interior.jpg'),
-  karahi: localImage('karahi.jpg'),
-  bbq: localImage('bbq.jpg'),
-  handi: localImage('handi.jpg'),
-  biryani: localImage('gallery-2.jpg'),
-  skewers: localImage('skewers.jpg'),
-  spices: localImage('spices.jpg'),
-  table: localImage('table.jpg'),
-  gallery1: localImage('gallery-1.jpg'),
-  gallery2: localImage('gallery-2.jpg'),
-  gallery3: localImage('gallery-3.jpg'),
-  gallery4: localImage('gallery-4.jpg'),
-  galleryFamily: localImage('gallery-family-table.png'),
-  galleryFoodStory: localImage('gallery-food-story.png'),
+  hero,
+  heroBbq,
+  heroBiryani: gallery2,
+  heroInterior,
+  heroKarahiTable,
+  heroKarahiInterior,
+  interior: heroInterior,
+  karahi,
+  bbq,
+  handi,
+  biryani: gallery2,
+  skewers,
+  spices,
+  table,
+  gallery1,
+  gallery2,
+  gallery3,
+  gallery4,
+  galleryFamily,
+  galleryFoodStory,
 }
 
 const menuCategories = [
